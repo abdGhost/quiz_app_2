@@ -15,8 +15,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: HomeScreen(
         backgroundColor: [
-          Color.fromARGB(255, 12, 0, 58),
-          Color.fromARGB(255, 18, 1, 83),
+          Color.fromARGB(255, 91, 1, 129),
+          Color.fromARGB(255, 53, 1, 76),
         ],
       ),
     );

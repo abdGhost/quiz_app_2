@@ -7,23 +7,26 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: backgroundColor,
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: backgroundColor,
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
           ),
+        ),
+        child: Center(
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
               Image.asset(
                 'assets/images/quiz-logo.png',
                 fit: BoxFit.cover,
+                width: 300,
+                color: const Color.fromARGB(150, 255, 255, 255),
               ),
               const SizedBox(
-                height: 20,
+                height: 40,
               ),
               const Text(
                 'Learn Flutter With Fun',
@@ -35,10 +38,14 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              OutlinedButton(
+              OutlinedButton.icon(
                 onPressed: () {},
-                child: const Text(
-                  'Start',
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: Colors.white,
+                ),
+                icon: const Icon(Icons.arrow_right_alt),
+                label: const Text(
+                  'Start Quiz',
                 ),
               )
             ],
