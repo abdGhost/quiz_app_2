@@ -5,13 +5,15 @@ class QuestionsScreen extends StatefulWidget {
 
   @override
   State createState() {
-    return QuestionsScreenState();
+    return _QuestionsScreenState();
   }
 }
 
-class QuestionsScreenState extends State<QuestionsScreen> {
+class _QuestionsScreenState extends State<QuestionsScreen> {
   @override
   Widget build(context) {
-    return Container();
+    return Container(
+      color: Colors.white,
+    );
   }
 }
